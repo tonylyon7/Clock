@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@200;400&display=swap');
+
+.Clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+}
+
+.Clock::after{
+    background: #aaa;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+}
+
+.hour-hand {
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    background: #222;
+    top: 30%;
+    left: 49%;
+    transform-origin: bottom;
+}
+
+.min-hand{
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background: #444;
+    top: 22.5%;
+    left: 49%;
+    transform-origin: bottom;
+}
+
+.sec-hand{
+    position: absolute;
+    width: 2px;
+    height: 118px;
+    background: red;
+    top: 10.5%;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.Clock Span{
+    position: absolute;
+    font-family: serif;
+    font-weight: 700;
+
+}
+
+.twelve {
+    /* top: 1%; */
+    left: 44%;
+}
+
+.one {
+    top: 6%;
+    right: 26%;
+}
+
+.eleven {
+    top: 10%;
+    left: 20%;
+}
+
+.two {
+    top: 24%;
+    right: 10%;
+}
+
+.three {
+    top: 46%;
+    right: 10px;
+}
+
+.four {
+    top: 67%;
+    right: 30px;
+}
+
+.five {
+    top: 82%;
+    left: 71%;
+    
+}
+
+.six {
+    bottom: 2px;
+    left: 50%;
+}
+
+.seven {
+    right: 70%;
+    top: 84%;
+}
+
+.eight {
+    top: 67%;
+    left: 30px;
+}
+
+.nine {
+    top: 46%;
+    left: 10px;
+}
+.ten {
+    top: 25%;
+    left: 18px;
+}
